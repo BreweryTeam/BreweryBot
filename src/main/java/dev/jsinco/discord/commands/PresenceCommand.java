@@ -35,7 +35,7 @@ public class PresenceCommand implements CommandModule {
         settings.setDefaultActivityType(activityType);
         settings.setDefaultActivity(activity);
         settings.save();
-        event.reply("Presence updated.").setEphemeral(true).queue();
+        event.reply("Presence updated.").queue();
     }
 
     @Override
