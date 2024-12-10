@@ -11,6 +11,15 @@ import java.util.stream.Stream;
 
 public class Util {
 
+    public static boolean equalsAny(Object obj, Object... objects) {
+        for (Object object : objects) {
+            if (Objects.equals(obj, object)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     // Enum
 
     @Nullable
