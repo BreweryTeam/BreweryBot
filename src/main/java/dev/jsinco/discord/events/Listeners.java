@@ -51,8 +51,6 @@ public class Listeners implements ListenerModule {
             }
 
             attachment.getProxy().download().thenAccept(inputStream -> {
-                // Do something with the input stream
-
                 HttpRequest request = HttpRequest.newBuilder()
                         .uri(URI.create("https://api.pastes.dev/post"))
                         .header("Content-Type", contentType)
